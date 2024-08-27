@@ -4,11 +4,13 @@ class Personal_de_servicio(
     identificacion: String,
     estadoCivil: String,
     yearsIncorporacion: Int,
-    numeroDespacho:String,
+    numeroDespacho: Int,
     var seccion:String):
 
 
-         Empleado(nombre, apellidos, identificacion, estadoCivil, yearsIncorporacion.toString(), numeroDespacho) {
+         Empleado(nombre, apellidos, identificacion, estadoCivil, yearsIncorporacion.toString(),
+             numeroDespacho.toString()
+         ) {
 
     fun trasladarSeccion(nuevaSeccion: String) {
         seccion = nuevaSeccion

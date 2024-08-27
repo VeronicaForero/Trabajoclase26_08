@@ -1,7 +1,7 @@
-class Profesores(nombre:String, apellidos:String, identificacion:String, estadocivil:String, numeroDespacho: Int, yearsIncorporacion: String, var departamento:String):
+class Profesores(nombre:String, apellidos:String, identificacion:String, estadocivil:String, numeroDespacho: Int, yearsIncorporacion: Int, var departamento:String):
 
 
-    Empleado(nombre, apellidos,identificacion,estadocivil,yearsIncorporacion, numeroDespacho.toString()){
+    Empleado(nombre, apellidos,identificacion,estadocivil, yearsIncorporacion.toString(), numeroDespacho.toString()){
 
          fun cambiarDepartamento(nuevoDepartamento:String){
              departamento=nuevoDepartamento
